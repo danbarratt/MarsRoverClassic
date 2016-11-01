@@ -7,17 +7,11 @@ namespace MarsRover
 	/// </summary>
 	public class RoverLocation
 	{
-
-		#region Private Members
-
 		private CompassDirection m_direction;
 		private int m_xPosition;
 		private int m_yPosition;
 
-		#endregion
 
-
-		#region Constructors
 
 		/// <summary>
 		/// Defines the heading and direction of a Rover
@@ -82,10 +76,7 @@ namespace MarsRover
 
 		}
 
-		#endregion
 
-
-		#region Public Properties
 
 		/// <summary>
 		/// Current direction (Watch for null values!)
@@ -116,10 +107,6 @@ namespace MarsRover
 			get { return m_yPosition; }
 		}
 
-		#endregion
-
-
-		#region Public Methods
 
 		/// <summary>
 		/// Returns the current direction and heading
@@ -140,11 +127,8 @@ namespace MarsRover
 		/// <returns></returns>
 		public RoverLocation Clone()
 		{
-			RoverLocation clone = new RoverLocation(this.ToString());
-			return clone;
+		    return new RoverLocation(this.ToString());
 		}
-
-		#endregion
 
 	}
 }

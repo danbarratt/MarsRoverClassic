@@ -1,5 +1,4 @@
 using System;
-using System.Diagnostics;
 using System.IO;
 
 namespace MarsRover
@@ -9,12 +8,7 @@ namespace MarsRover
 	/// </summary>
 	class MardRoverConsole
 	{
-
-		#region private members
-
 		private static string inputFileName;
-        		
-		#endregion	
         
 
 		/// <summary>
@@ -124,8 +118,6 @@ namespace MarsRover
 		}
 
 
-		#region PauseConsole
-
 		/// <summary>
 		/// Pause thread execution untill the user hits the 'ENTER' key
 		/// </summary>
@@ -135,10 +127,6 @@ namespace MarsRover
 			System.Console.Read();
 		}
 
-		#endregion
-
-
-		#region Output Messages to the Console
 
 		/// <summary>
 		/// Display a message to the output console
@@ -169,9 +157,6 @@ namespace MarsRover
 		{
 			Console.WriteLine(outputObject.ToString());
 		}
-
-		#endregion
-
 
 	}
 }

@@ -9,8 +9,6 @@ namespace MarsRover
 	public class Rover
 	{
 
-		#region Private Members
-
 		/// <summary>
 		/// Current Mission Status of a Rover
 		/// </summary>
@@ -38,8 +36,6 @@ namespace MarsRover
 		private int				m_plateauXDimension;
 		private int				m_plateauYDimension;
 		private StringBuilder	m_EventLogs;
-
-		#endregion
 
 
 		/// <summary>
@@ -426,7 +422,6 @@ namespace MarsRover
 		}
 
 
-        #region Event Log
 
 		/// <summary>
 		/// Add an item to the EventLog
@@ -448,8 +443,6 @@ namespace MarsRover
 				return this.m_EventLogs.ToString().Split(Constants.EVENT_LOG_LINE_BREAK);
 			}
 		}
-
-		#endregion
 
 	}
 }

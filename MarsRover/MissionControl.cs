@@ -10,9 +10,6 @@ namespace MarsRover
 	/// </summary>
 	public class MissionControl
 	{
-
-		#region Private Members
-
 		private string			m_MissionOutcomeMessage;
 		private bool			m_MissionSuccess = false;
 
@@ -22,10 +19,7 @@ namespace MarsRover
 		private int plateauXDimension = 0;
 		private int plateauYDimension = 0;
 
-		#endregion
 
-
-		#region Constructor
 
 		/// <summary>
 		/// Main Constructor
@@ -35,10 +29,7 @@ namespace MarsRover
 			this.m_EventLogs = new StringBuilder(100);
 		}
 
-		#endregion
 
-
-		#region Load Orders
 
 		/// <summary>
 		/// Loads the input orders from an external file
@@ -150,10 +141,8 @@ namespace MarsRover
 			return (this.m_Rovers.Count > 0);
 		}
 
-		#endregion
 
 
-		#region Deploy Rovers
 
 		/// <summary>
 		/// Land the rovers on Mars and set each one off.
@@ -187,10 +176,7 @@ namespace MarsRover
 
 		}
 
-		#endregion
 
-
-		#region Public Properties
 
 		/// <summary>
 		/// Determine if the mission is a success.
@@ -242,10 +228,7 @@ namespace MarsRover
 			}
 		}
 
-		#endregion
 
-
-		#region Event Log Methods
 
 		/// <summary>
 		/// Add an item to the EventLog
@@ -278,8 +261,6 @@ namespace MarsRover
 				return this.m_EventLogs.ToString().Split(Constants.EVENT_LOG_LINE_BREAK);
 			}
 		}
-
-		#endregion
 
 	}
 }

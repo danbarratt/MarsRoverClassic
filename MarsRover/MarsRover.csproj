@@ -7,7 +7,8 @@
     <ProjectGuid>{A56992DC-5BC2-4D21-900F-B20FA044E98B}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ApplicationIcon>App.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
     <AssemblyKeyContainerName />
     <AssemblyName>MarsRover</AssemblyName>
     <AssemblyOriginatorKeyFile />
@@ -141,7 +142,6 @@
     <Compile Include="RoverLocation.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Content Include="App.ico" />
     <Content Include="INPUT.txt" />
     <Content Include="TEST.txt" />
   </ItemGroup>
