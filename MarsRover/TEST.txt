@@ -1,0 +1,12 @@
+#
+#
+# Input file to test the MarsRover program
+#
+# Rover1: Perform a complete lap of the Landing Plateau clockwise.
+# Rover2: Turn 4 times to the left, 4 times to the right, then do a lap of the plateau anti-clockwise.
+#
+5 5
+0 0 N
+MMMMMRMMMMMRMMMMMRMMMMM
+5 5 W
+LLLLRRRRMMMMMLMMMMMLMMMMMLMMMMM
